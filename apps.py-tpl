@@ -8,4 +8,4 @@ class {{ camel_case_app_name }}Config(AppConfig):
     def ready(self):
         from {{app_name}}.signals import init_signals
         init_signals()
-        return super(ChallengeConfig, self).ready()
+        return super({{ camel_case_app_name }}Config, self).ready()
